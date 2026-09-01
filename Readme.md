@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Тимур Мирхайдаров](https://up.htmlacademy.ru/htmlcss-individual/3/user/796097).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+* Сайт: [Мой проект Седона](https://tmsawyer.github.io/796097-sedona-3/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
