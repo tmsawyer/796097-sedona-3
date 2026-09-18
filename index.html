@@ -2,12 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <a href="index.html"><img src="images/logo.svg" width="140" height="70" alt="logo City of Sedona"></a>
+        <a href="index.html">
+          <img src="images/logo.svg" width="140" height="70" alt="logo City of Sedona">
+        </a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
@@ -62,9 +65,9 @@
             <p class="reasons-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li class="reasons-item">
-            <img class="reasons-item-img" src="images/photo-2.jpg" width="800" height="385" alt="Фотография каньона">
             <h3 class="reasons-item-title">Там есть мост дьявола</h3>
             <p class="reasons-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="reasons-item-img" src="images/photo-2.jpg" width="800" height="385" alt="Фотография каньона">
             </li>
         </ul>
       </section>
@@ -96,8 +99,8 @@
       </section>
 
       <section class="subscribe index">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="subscribe-title index">Подпишитесь на рассылку</h2>
+        <p class="subscribe-text index">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscribe-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
           <button class="subscribe-button" type="submit">Подписаться</button>
@@ -106,22 +109,27 @@
     </main>
 
     <footer class="main-footer">
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://vk.com/htmlacademy"><img src="#" alt="Логотип Вконтакте"></a>
-          </li>
-          <li class="social-item">
-            <a href="https://t.me/htmlacademy"><img src="#" alt="Логотип Телеграмм"></a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru"><img src="#"
-                alt="Логотип Ютуб"></a>
-          </li>
-        </ul>
-        <a href="tel:+78128121212">+7(812)812-12-12</a>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#"
-            alt="Иконка HTML Академии"></a>
-      </footer>
-
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Логотип Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Логотип Телеграмм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Логотип Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="./images/logo_htmlacademy.png" alt="Иконка HTML Академии">
+      </a>
+    </footer>
   </body>
 </html>

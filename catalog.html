@@ -2,12 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона — Каталог</title>
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <a href="index.html"><img src="images/logo.svg" width="140" height="70" alt="logo City of Sedona"></a>
+        <a href="index.html">
+          <img src="images/logo.svg" width="140" height="70" alt="logo City of Sedona">
+        </a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
@@ -17,17 +20,17 @@
         </nav>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="search" href="#">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="favourite" href="#">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="favourite" href="#">Хочу сюда!</a>
+            <a class="navigation-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </div>
@@ -44,22 +47,21 @@
             <a class="breadcrumbs-link"><span class="visually-hidden">Гостиницы</span></a>
           </li>
         </ul>
-      </section>
 
-      <section class="catalog-filter">
+        <section class="catalog-filter">
         <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control"><input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн</label>
+                <label class="control-label"><input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control"><input class="control-input" type="checkbox" name="parking" checked>Парковка</label>
+                <label class="control-label"><input class="control-input" type="checkbox" name="parking" checked>Парковка</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control"><input class="control-input" type="checkbox" name="wifi">Wi-Fi</label>
+                <label class="control-label"><input class="control-input" type="checkbox" name="wifi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -67,13 +69,13 @@
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-group">
               <li class="catalog-filter-item">
-                <label class="control-input"><input type="radio" name="hotel-group" value="hotel" checked>Гостиница</label>
+                <label class="control-label"><input class="control-input" type="radio" name="hotel-group" value="hotel" checked>Гостиница</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control-input"><input type="radio" name="hotel-group" value="motel">Мотель</label>
+                <label class="control-label"><input class="control-input" type="radio" name="hotel-group" value="motel">Мотель</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control-input"><input type="radio" name="hotel-group" value="apartments">Апартаменты</label>
+                <label class="control-label"><input class="control-input" type="radio" name="hotel-group" value="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -87,6 +89,7 @@
           <button class="button" type="submit">Применить</button>
           <button class="button-reset" type="reset">Сбросить</button>
         </form>
+      </section>
       </section>
 
       <section class="searched-products">
@@ -106,8 +109,8 @@
             <a class="sort" href="catalog.html?view=list"><span class="visually-hidden">Показать список</span></a>
           </li>
         </ul>
-        <ul class="profuct-list">
-          <li class="profuct-item">
+        <ul class="product-list">
+          <li class="product-item">
             <a class="product-card-link">
               <img class="product-card-img" src="images/hotel-1.jpg" width="300" height="212" alt="Ущелье с видом на звёздное небо">
             </a>
@@ -171,7 +174,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <span class="pagination-quewe">...</span>
+            <a class="pagination-link pagination-quewe">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -190,25 +193,27 @@
     </main>
 
     <footer class="main-footer">
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://vk.com/htmlacademy"><img src="#" alt="Логотип Вконтакте"></a>
-          </li>
-          <li class="social-item">
-            <a href="https://t.me/htmlacademy"><img src="#" alt="Логотип Телеграмм"></a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru"><img src="#"
-                alt="Логотип Ютуб"></a>
-          </li>
-        </ul>
-
-        <a href="tel:+78128121212">+7(812)812-12-12</a>
-
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#"
-            alt="Иконка HTML Академии"></a>
-
-      </footer>
-
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Логотип Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Логотип Телеграмм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Логотип Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="./images/logo_htmlacademy.png" alt="Иконка HTML Академии">
+      </a>
+    </footer>
   </body>
 </html>
