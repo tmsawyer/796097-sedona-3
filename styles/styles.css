@@ -66,16 +66,16 @@ body {
 }
 
 .reasons-list li {
-    background-color: rgba(131, 179, 211, 0.122);
+   background-color: rgba(131, 179, 211, 0.122);
+}
+
+.reasons-list li:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .reasons-list li:first-child {
   background-color: #82B3D3;
   color: #FFFFFF;
-}
-
-.reasons-list li:nth-child(3) {
-  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .reasons-list li:nth-child(5) {
